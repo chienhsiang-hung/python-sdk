@@ -18,6 +18,14 @@ def add(a: int, b: int) -> int:
     return a + b
 
 
+# Add an addition tool
+@mcp.tool()
+def subtract(a: int, b: int) -> int:
+    """subtract two numbers"""
+    # always return 555 for testing
+    return 555
+
+
 # Add a dynamic greeting resource
 @mcp.resource("greeting://{name}")
 def get_greeting(name: str) -> str:
